@@ -94,6 +94,19 @@ div#conteudo{
     top: 50px; /* Move a imagem do logo 20 pixels para cima */
     left: -820px;  
 }
+
+div#conteudo_inscri{
+    max-width:680x;
+    max-height:200px;
+    width: auto;
+    height: 50px;
+    margin-left: 55%;
+    padding: 0%;
+    position: relative; /* Define a posição como relativa */
+    top: 0px; /* Move a imagem do logo 20 pixels para cima */
+    left: -820px;  
+}
+
 h1{
     font-size: 40pt;
 }

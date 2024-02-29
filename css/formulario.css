@@ -1,0 +1,54 @@
+/* ######## CSS do formulário##### */
+
+.two-column-form {
+    width: 800px; /* Largura do formulário */
+    margin: 100px auto; /* Centraliza o formulário e adiciona espaço acima e abaixo */
+    overflow: hidden; /* Limpa o overflow */
+    display: flex; /* Usa flexbox para controlar o layout das colunas */
+}
+
+.form-column {
+    flex: 1; /* Faz com que as colunas ocupem o mesmo espaço */
+    margin-right: 50px; /* Adiciona margem à direita para separar as colunas */
+}
+
+/* Outros estilos aqui... */
+
+/* Estilos adicionais para melhorar a aparência do formulário */
+label {
+    display: block; /* Garante que os rótulos ocupem uma linha inteira */
+    margin-bottom: 5px; /* Adiciona espaçamento entre os rótulos e os campos de entrada */
+}
+
+input, select, textarea {
+    width: 100%; /* Faz com que os campos ocupem toda a largura da coluna */
+    padding: 8px; /* Adiciona espaçamento interno aos campos */
+    margin-bottom: 10px; /* Adiciona espaçamento entre os campos */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do campo */
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente apenas o textarea */
+}
+
+li{
+    display: flex;
+}
+
+.centered-button {
+    position: relative;
+    text-align: center; /* Alinha o conteúdo ao centro */
+    margin-top: 20px; /* Adiciona um espaço acima do botão */
+}
+.blue-button {
+    background-color: #0074b8; /* Define a cor de fundo do botão como azul */
+    color: white; /* Define a cor do texto como branca */
+    padding: 15px 26px; /* Adiciona espaçamento interno ao botão para torná-lo maior */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona cantos arredondados ao botão */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+}
+
+.blue-button:hover{
+    background-color: #3bb1ff;
+}

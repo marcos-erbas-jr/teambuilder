@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/ico">
+        <title>Página inicial</title>
+        <link rel="stylesheet" href="css/estilo.css" type="text/css">
+        <link rel="stylesheet" href="css/formulario.css" type="text/css">
+    </head>
+    <body>
+        <script languge="javascript" src="script/script.js"></script>
+        <header>
+            
+            <div class="logo">
+                <a href="index.html"><img id="logocomplet" src="imagens/logo_complet.png" alt="Logo TeamBuilder"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="construcao.html" target="_self" rel="prev">RANKING</a></li>
+                    <li><a href="construcao.html" target="_self" rel="next">EQUIPES</a></li>
+                    <li><a href="construcao.html" target="_self" rel="next">VAGAS</a></li>
+                    <li><a href="construcao.html" target="_self" rel="next">PROJETOS</a></li>
+                    <li><a href="construcao.html" target="_self" rel="next">SOBRE</a></li>
+                    <li><a href="inscricao.html" class="inscrever-se">INSCREVER-SE</a></li> <!-- Botão Inscrever-se -->
+                </ul>
+            </nav>
+        </header>
+        <div id="conteudo_inscri">
+            <h1>Inscrição</h1>
+            <h3>Realize sua inscrição para participar de uma equipe, mas não se esqueça de ler o regulamento clicando <a href="sobre.html">aqui</a>.</h3>
+        </div>
+
+        <form class="two-column-form">
+            <div class="form-column">
+                <!-- Informações pessoais -->
+                <h3>Informações pessoais</h3>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome completo">
+
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option>Análise e Desenvolvimento de Sistemas</option>
+                    <option>Banco de Dados</option>
+                    <option>Ciência da Computação</option>
+                    <option>Ciência de Dados</option>
+                    <option>Engenharia da Computação</option>
+                    <option>Engenharia de Software</option>
+                    <option>Jogos Digitais</option>
+                    <option>Segurança da Informação</option>
+                    <option>Sistemas de Informação</option>
+                    <option>Outros</option>
+                </select>
+
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="(DD) XXXXX-XXXX">
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito Federal</option>
+                    <option>Espírito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                </select>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não informar</option>  
+                </select>
+
+                <label for="data_nascimento">Data de nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </div>
+
+            <div class="form-column">
+                <!-- Informações gerais -->
+                <h3>Informações gerais</h3>
+                <label for="linguagem_domina">Linguagem que você mais domina:</label>
+                <select id="linguagem_domina" name="linguagem_domina">
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>C++</option>
+                    <option>C#</option>
+                    <option>Swift</option>
+                    <option>PHP</option>
+                    <option>Ruby</option>
+                    <option>C</option>
+                    <option>Go</option>
+                    <option>R</option>
+                    <option>Outras</option>
+                </select>
+
+                <label for="projetos_gostaria">Tipos de projetos que você gostaria de participar:</label>
+                <select id="projetos_gostaria" name="projetos_gostaria">
+                    <option>Web</option>
+                    <option>Aplicativos mobile</option>
+                    <option>Software para desktop</option>
+                    <option>Jogos</option>
+                    <option>Sistemas embarcados</option>
+                    <option>Outros</option>
+                </select>
+
+                <label for="experiencia">Experiência:</label>
+                <textarea id="experiencia" name="experiencia" rows="6" cols="50" placeholder="Experiência ou habilidades relevantes."></textarea>
+
+                <label for="area_atuar">Área que gostaria de atuar:</label>
+                <select id="area_atuar" name="area_atuar">
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Segurança da Informação</option>
+                    <option>Cloud Computing</option>
+                    <option>Ciência de Dados e Análise</option>
+                    <option>DevOps</option>
+                    <option>Outros</option>
+                </select>
+                <h4>Concorda em comprometer-se com a sua equipe?</h4>
+                    <ul class="confirmacoes">
+                        <li>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                            <label>&nbsp &nbsp Sim</label>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                            <label>&nbsp &nbsp Li e concordo com o <a href="sobre.html">regulamento</a></label>
+                        </li>
+                    </ul>
+            </div>
+            <div class="centered-button">
+                <button type="submit" class="blue-button">Enviar</button>
+            </div>
+        </form>
+        
+        
+    </body>
+</html>
