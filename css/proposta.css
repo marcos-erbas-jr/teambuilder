@@ -1,0 +1,22 @@
+h1#prop_tit{
+    display: flex;
+    margin-left: 180px;
+}
+
+div#textoc{
+    max-width:900px;
+    max-height:1400px;
+    width: 850px;
+    height: 1300px;
+    margin-left: 55%;
+    padding-bottom: 30px;
+    bottom: 200px;
+    position: relative; /* Define a posição como relativa */
+    top: 0px; /* Move a imagem do logo 20 pixels para cima */
+    left: -820px;  
+}
+
+h5{
+    color: red;
+    font-size: 14 pt;
+}
