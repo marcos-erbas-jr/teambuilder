@@ -3,17 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/ico">
-        <title>Página inicial</title>
-        <link rel="stylesheet" href="css/estilo.css" type="text/css">
-        <link rel="stylesheet" href="css/proposta.css" type="text/css">
+        <link rel="shortcut icon" href="../static/imagens/favicon.ico" type="image/ico">
+        <title>Proposta</title>
+        <link rel="stylesheet" href="../static/css/estilo.css" type="text/css">
+        <link rel="stylesheet" href="../static/css/proposta.css" type="text/css">
     </head>
     <body>
-        <script languge="javascript" src="script/script.js"></script>
+        <script languge="javascript" src="../static/script/script.js"></script>
         <header>
             
             <div class="logo">
-                <a href="index.html"><img id="logocomplet" src="imagens/logo_complet.png" alt="Logo TeamBuilder"></a>
+                <a href="{{ url_for('homepage') }}"><img id="logocomplet" src="../static/imagens/logo_complet.png" alt="Logo TeamBuilder"></a>
             </div>
             <nav>
                 <ul>

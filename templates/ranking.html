@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/ico">
-        <title>Página inicial</title>
-        <link rel="stylesheet" href="css/estilo.css" type="text/css">
+        <link rel="shortcut icon" href="../static/imagens/favicon.ico" type="image/ico">
+        <title>Ranking</title>
+        <link rel="stylesheet" href="../static/css/estilo.css" type="text/css">
     </head>
     <body>
-        <script languge="javascript" src="script/script.js"></script>
+        <script languge="javascript" src="../static/script/script.js"></script>
         <header>
             
             <div class="logo">
-                <a href="index.html"><img id="logocomplet" src="imagens/logo_complet.png" alt="Logo TeamBuilder"></a>
+                <a href="{{ url_for('homepage') }}"><img id="logocomplet" src="../static/imagens/logo_complet.png" alt="Logo TeamBuilder"></a>
             </div>
             <nav>
                 <ul>
@@ -25,12 +25,11 @@
                 </ul>
             </nav>
         </header>
+        <img id="logoname" src="../static/imagens/logo_name.png" alt="Logo TeamBuilder">
         <div id="conteudo">
-            <h1>Sobre</h1>
-            <h3>Este projeto tem como objetivo dar a oportunidade para que alunos com interesse em desenvolvimento possam participar de equipes em projetos de programação.</h3>
-            
-            <h2>Mais informações:</h2>
-            <h4><a href="proposta.html">Proposta de projeto e regulamento</a></h4>
+            <h1>O Ranking ainda não está disponível!</h1>
+        </div>
+        <img id="icone" src="../static/imagens/logo.png" alt="Logo TeamBuilder">
         
     </body>
 </html>
