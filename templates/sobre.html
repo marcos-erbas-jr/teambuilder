@@ -5,33 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../static/imagens/favicon.ico" type="image/ico">
         <title>Sobre</title>
-        <link rel="stylesheet" href="../static/css/estilo.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="../static/css/estilo.css"
+                type="text/css">-->
     </head>
     <body>
-        <script languge="javascript" src="../static/script/script.js"></script>
         <header>
-            
-            <div class="logo">
-                <a href="{{ url_for('homepage') }}"><img id="logocomplet" src="../static/imagens/logo_complet.png" alt="Logo TeamBuilder"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="ranking.html" target="_self" rel="prev">RANKING</a></li>
-                    <li><a href="equipes.html" target="_self" rel="next">EQUIPES</a></li>
-                    <li><a href="vagas.html" target="_self" rel="next">VAGAS</a></li>
-                    <li><a href="projetos.html" target="_self" rel="next">PROJETOS</a></li>
-                    <li><a href="sobre.html" target="_self" rel="next">SOBRE</a></li>
-                    <li><a href="inscricao.html" class="inscrever-se">INSCREVER-SE</a></li>
+            <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #0096d6;">
+              <a class="navbar-brand" href="#" style="color: white;">TeamBuilder</a> <!--TENTAR
+              COLOCAR LOGO AQUI -->
+              <button class="navbar-toggler" type="button" id="menu-button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('homepage') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('vagas') }}">Vagas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('projects') }}">Projetos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('cadastrarProjeto') }}">Cadastrar Projeto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('sobre') }}">Sobre</a>
+                  </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <a class="nav-link" href="{{ url_for('inscricao') }}"><button type="button" class="btn btn-primary">Inscrever-se</button></a>
+                </form>
+              </div>
             </nav>
         </header>
-        <div id="conteudo">
+        <div id="conteudo" style="margin: 5% 10% 10% 20%;">
             <h1>Sobre</h1>
-            <h3>Este projeto tem como objetivo dar a oportunidade para que alunos com interesse em desenvolvimento possam participar de equipes em projetos de programação.</h3>
-            
+            <h3>Esta plataforma tem como objetivo de proporcionar a oportunidade para que alunos com interesse em desenvolvimento possam participar de equipes em projetos de programação.</h3>
+
             <h2>Mais informações:</h2>
-            <h4><a href="proposta.html">Proposta de projeto e regulamento</a></h4>
+
+            <h4><a href="proposta.html">Proposta da plataforma e regulamentos</a></h4>
         </div>
-        
+
+       <script languge="javascript" src="../static/script/script.js"></script>
+
     </body>
 </html>

@@ -38,5 +38,13 @@ def sobre():
 def vagas():
     return render_template('vagas.html')
 
+@app.route("/cadastrar-projeto.html")
+def cadastrarProjeto():
+    return render_template('cadastrar-projeto.html')
+
+@app.route("/candidatar.html")
+def candidatar():
+    return render_template('candidatar.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

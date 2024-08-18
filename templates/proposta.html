@@ -4,62 +4,81 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../static/imagens/favicon.ico" type="image/ico">
-        <title>Proposta</title>
-        <link rel="stylesheet" href="../static/css/estilo.css" type="text/css">
-        <link rel="stylesheet" href="../static/css/proposta.css" type="text/css">
+        <title>Sobre</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="../static/css/estilo.css"
+                type="text/css">-->
     </head>
     <body>
-        <script languge="javascript" src="../static/script/script.js"></script>
         <header>
-            
-            <div class="logo">
-                <a href="{{ url_for('homepage') }}"><img id="logocomplet" src="../static/imagens/logo_complet.png" alt="Logo TeamBuilder"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="ranking.html" target="_self" rel="prev">RANKING</a></li>
-                    <li><a href="equipes.html" target="_self" rel="next">EQUIPES</a></li>
-                    <li><a href="vagas.html" target="_self" rel="next">VAGAS</a></li>
-                    <li><a href="projetos.html" target="_self" rel="next">PROJETOS</a></li>
-                    <li><a href="sobre.html" target="_self" rel="next">SOBRE</a></li>
-                    <li><a href="inscricao.html" class="inscrever-se">INSCREVER-SE</a></li>
+            <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #0096d6;">
+              <a class="navbar-brand" href="#" style="color: white;">TeamBuilder</a> <!--TENTAR
+              COLOCAR LOGO AQUI -->
+              <button class="navbar-toggler" type="button" id="menu-button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('homepage') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('vagas') }}">Vagas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('projects') }}">Projetos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('cadastrarProjeto') }}">Cadastrar Projeto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('sobre') }}">Sobre</a>
+                  </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <a class="nav-link" href="{{ url_for('inscricao') }}"><button type="button" class="btn btn-primary">Inscrever-se</button></a>
+                </form>
+              </div>
             </nav>
         </header>
+        <div id="conteudo" style="margin: 5% 10% 10% 20%;">
             <h1 id="prop_tit">Proposta de Projeto</h1>
         <div id="textoc">
                 <h5>Atenção! Este projeto está sendo elaborado por alunos não tendo vínculo com a instituição de ensino UNINTER, não é obrigatório e não fará parte da composição avaliativa do curso.</h5>
                     <h2>• Objetivo:</h2>
-                
-                <p>Essa proposta tem como objetivo oferecer a oportunidade de experiência para os alunos de ADS, onde os mesmos serão divididos em equipes compostas de até 6 membros e cada equipe deverá elaborar um projeto que será desenvolvido ao longo do curso.</p>
+
+                <p>Esta plataforma tem como objetivo oferecer a oportunidade de experiência para os alunos da área de TI, onde os mesmos serão divididos em equipes compostas de até 10 membros e cada equipe deverá elaborar um projeto que será desenvolvido em conjunto.</p>
                     <h2>• Característica do Projeto:</h2>
                 <p>Para um experiência completa, o projeto de cada equipe deverá ter as seguintes características:</p>
                     <ol type="1">
                         <li>Relevância prática: O projeto deve abordar um problema real ou uma necessidade do mundo real, de preferência relacionado ao campo de atuação dos alunos ou a uma área de interesse específica.</li><br>
-                        <li>Composição da equipe: O projeto deverá ser composto por alunos do curso de ADS, ter ao menos um aluno com conhecimento mais avançado na área, de preferência a equipe deve ser mista, com alunos que tenham interesse em áreas diversas como: backend, frontend, segurança da informação, banco de dados, etc.</li><br>
+                        <li>Composição da equipe: O projeto deverá ser composto por alunos da UNINTER na área de TI, de preferência a equipe deve ser mista, com alunos que tenham interesse em áreas diversas como: backend, frontend, segurança da informação, banco de dados, etc.</li><br>
                         <li>Escopo definido: O projeto deve ter um escopo bem definido e alcançável dentro do tempo e dos recursos disponíveis. Isso ajuda a garantir que os objetivos do projeto sejam alcançados de forma eficaz.</li><br>
                         <li>Complexidade adequada: O projeto deve ser desafiador o suficiente para estimular o aprendizado e o crescimento dos alunos, mas não tão complexo a ponto de sobrecarregá-los ou desencorajá-los.</li><br>
-                        <li>Interdisciplinaridade: Idealmente, o projeto pode integrar várias áreas do conhecimento, como programação, design de interface do usuário, bancos de dados, segurança da informação, entre outros, proporcionando uma experiência mais abrangente aos alunos.</li><br>
+                        <li>Interdisciplinaridade: Idealmente, o projeto pode integrar várias áreas do conhecimento, como programação, design de interface do usuário, bancos de dados, segurança da informação, eletrônica, entre outros, proporcionando uma experiência mais abrangente aos alunos.</li><br>
                         <li>Colaboração em equipe: O projeto deve promover o trabalho em equipe, permitindo que os alunos pratiquem habilidades de comunicação, colaboração e resolução de problemas em um ambiente colaborativo.</li><br>
-                        <li>Documentação adequada: Os alunos devem ser incentivados a documentar adequadamente o processo de desenvolvimento do projeto, incluindo requisitos, design, implementação, testes e manutenção.</li><br>
+                        <li>Documentação adequada: Os participantes são incentivados a documentar adequadamente o processo de desenvolvimento do projeto, incluindo requisítos, design, implementação, testes e manutenção.</li><br>
                     </ol>
                     <h2>• Ingresso no projeto:</h2>
-                <p>Como este projeto não é oficial, o ingresso será voluntário, os alunos deverão preencher um formulário simplificado, onde informarão coisas como: nível de conhecimento, linguagem que possuem domínio ou que estão estudando, área que deseja atuar no projeto, tipos de projeto que tem como preferência, (web, mobile, jogos etc.) habilidades relevantes, experiências anteriores e disponibilidade de tempo, além de outras informações que poderão ser necessárias.</p>
+                <p>Como este projeto não é oficial, o ingresso será voluntário, os alunos deverão preencher um formulário simplificado, onde informarão coisas como: nível de conhecimento, linguagem que possuem domínio ou que estão estudando, área que deseja atuar no projeto, tipos de projeto que tem como preferência (web, mobile, jogos etc.),  habilidades relevantes, experiências anteriores e disponibilidade de tempo,
+                    além de outras informações que poderão ser necessárias.</p>
                     <h2>• Divisão e formação das equipes:</h2>
                 <p>As equipes serão divididas por uma comissão de alunos, que levarão em conta, o nível de conhecimento e as áreas de interesse que foram preenchidas no formulário, com intuito de criar equipes equilibradas e com composição mista. As etapas serão as seguintes:</p>
                     <ol type="1">
                         <li><strong>Criação da comissão de divisão de equipes: </strong>A comissão será composta por alunos interessados em liderança e organização, que serão responsáveis por elaborar a divisão das equipes. Como requisito para compor a comissão será necessário experiência na área ou conhecimento avançado em desenvolvimento, além de ter se voluntariado para tal responsabilidade.</li><br>
                         <li><strong>Solicitação de interesses:</strong> Os alunos interessados em participar do projeto preenchem um formulário detalhando suas áreas de interesse, habilidades relevantes, experiências anteriores e disponibilidade de tempo.</li><br>
                         <li><strong>Análise dos interesses e habilidades:</strong> A comissão revisa os formulários preenchidos pelos alunos, identificando padrões e áreas de interesse comuns. Eles também avaliam as habilidades individuais de cada aluno para garantir uma composição equilibrada das equipes.</li><br>
-                        <li><strong>Formação das equipes:</strong> Com base na análise dos interesses e habilidades, a comissão forma as equipes, procurando criar equipes que tenham uma mistura diversificada de habilidades, interesses e experiências. Eles garantem que cada equipe tenha representantes de diferentes áreas de especialização em ADS. Também serão responsáveis por informar quem serão os membros de cada equipe.</li><br>
+                        <li><strong>Formação das equipes:</strong> Com base na análise dos interesses e habilidades, a comissão forma as equipes, procurando criar equipes que tenham uma mistura diversificada de habilidades, interesses e experiências. Eles garantem que cada equipe tenha representantes de diferentes áreas de especialização. Também serão responsáveis por informar quem serão os membros de cada equipe.</li><br>
                     </ol>
                     <h2>• Escolha de projeto:</h2>
-                <p>Visando que os alunos desenvolvam soft skills como: comunicação, trabalho em equipe, resolução de conflitos, adaptabilidade, o projeto será escolhido pela própria equipe levando em consideração as recomendações de característica que o projeto deve ter, mencionadas no início deste documento.</p> 
+                <p>Visando que os alunos desenvolvam soft skills como: comunicação, trabalho em equipe, resolução de conflitos, adaptabilidade, o projeto será escolhido pela própria equipe levando em consideração as recomendações de característica que o projeto deve ter, mencionadas no início deste documento.</p>
                 <p>Os membros da equipe devem firmar um acordo de comprometimento com o projeto, afinal o objetivo é adquirir experiência real para o mercado de trabalho.</p>
                     <h2>• Etapas recomendadas para o desenvolvimento do projeto:</h2>
                 <p>Obs.: Essas etapas podem variar de acordo com o projeto escolhido.</p>
                     <ol type="1">
-                        <li><strong>Levantamento de requisitos:</strong>Nesta etapa inicial, os objetivos e requisitos do projeto são identificados e documentados. Isso inclui entender as necessidades do cliente ou usuário final, definir os recursos e funcionalidades necessárias e estabelecer os critérios de sucesso do projeto.</li><br>
+                        <li><strong>Eleição de um representante:</strong> Cada equipe deverá eleger um representante.</li><br>
+                        <li><strong>Levantamento de requisitos:</strong> Nesta etapa inicial, os objetivos e requisitos do projeto são identificados e documentados. Isso inclui entender as necessidades do cliente ou usuário final, definir os recursos e funcionalidades necessárias e estabelecer os critérios de sucesso do projeto.</li><br>
                         <li><strong>Análise:</strong> Uma vez que os requisitos são levantados, eles são analisados em detalhes para identificar as melhores abordagens para atendê-los. Isso pode incluir a identificação de possíveis desafios, restrições e oportunidades, bem como a definição de uma arquitetura inicial para o sistema.</li><br>
                         <li><strong>Design:</strong> Com base na análise dos requisitos, é elaborado um plano detalhado para a implementação do projeto. Isso inclui o design da arquitetura do sistema, a definição das interfaces de usuário, o design do banco de dados e a especificação dos componentes e módulos do sistema.</li><br>
                         <li><strong>Implementação:</strong> Nesta etapa, o projeto é desenvolvido de acordo com o plano de design. Os programadores escrevem o código fonte, criam os bancos de dados, desenvolvem as interfaces de usuário e implementam as funcionalidades especificadas nos requisitos.</li><br>
@@ -68,9 +87,19 @@
                         <li><strong>Manutenção e suporte:</strong> Após a implantação, o projeto entra em uma fase de manutenção e suporte contínuos. Isso inclui a correção de bugs, a implementação de novos recursos e atualizações de segurança, bem como o fornecimento de suporte técnico aos usuários.</li><br>
                         <li><strong>Avaliação:</strong> Ao longo do ciclo de vida do projeto, é importante realizar avaliações regulares para verificar se os objetivos estão sendo alcançados e identificar áreas para melhoria. Isso pode incluir avaliações de desempenho, análise de métricas de uso e feedback dos usuários.</li><br>
                     </ol>
+                <h2>• Competência do representante da equipe:</h2>
+                    <ol type="1">
+                        <li><strong>Cadastrar projeto:</strong> Logo após a formação da equipe e eleição do representante o mesmo será responsável por cadastrar o projeto escolhido pela equipe na plataforma TeamBuilder</li><br>
+                        <li><strong>Abrir vagas:</strong> O representante será resposável por abrir vagas em sua equipe na plataforma TeamBuilder.</li><br>
+                        <li><strong>Aceitar novos membros:</strong> O representante será resposável por aceitar novos membros que se candidataram para a equipe pela plataforma.</li><br>
+                        <li><strong>Repositório principal:</strong> Será responsabilidade do representante da equipe criar o repositório do projeto no GitHub, este repositório será vinculado ao cadastro do projeto na plataforma.</li><br>
+                    </ol>
                 <h5>Ideia para ser validada e desenvolvida: Criar um sistema de ranking das equipes, divulgado mensalmente onde as equipes serão avaliadas pelo progresso do seu próprio projeto. Visando criar um ambiente de competição saudável, incentivando as equipes melhorarem cada vez mais</h5>
                 <br>
         </div>
-        
+        </div>
+
+       <script languge="javascript" src="../static/script/script.js"></script>
+
     </body>
 </html>
